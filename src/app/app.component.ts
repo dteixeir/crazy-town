@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Crazy-Town!';
+  private users= [];
+  private headers= ['', 'users', 'OrganizationId', 'Active'];
 }
