@@ -9,7 +9,7 @@ import { UserLite } from '../../models/userLite/user-lite';
 export class UserService {
   private usersUrl = 'http://uat2.reliaslearning.com:8081/v1/users';  // URL to web API
 
-  private token = process.env.tokenKey;
+  private token = '';
 
   private headers = new Headers({
     'RLMS': this.token

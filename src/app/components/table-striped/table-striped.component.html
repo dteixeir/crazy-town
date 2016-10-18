@@ -20,15 +20,15 @@
           </div>
       </td>
       <td *ngIf="_headers.includes('users')">
-        {{user.lastName | capitalize }}, {{user.firstName | capitalize }}
+        {{user.lastName }}, {{user.firstName }}
         <br/>
-        <i>{{user.userName | capitalize}}</i>
+        <i>{{user.userName}}</i>
       </td>
       <td *ngIf="_headers.includes('users')">
         {{user.orgId}}
       </td>
       <td *ngIf="_headers.includes('users')">
-        {{user.userStatus | capitalize }}
+        {{user.userStatus }}
       </td>
     </tr>
   </tbody>

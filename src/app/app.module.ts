@@ -10,17 +10,12 @@ import { TableStripedComponent } from './components/table-striped/table-striped.
 
 // services
 import { UserService } from './services/userService/user.service';
-import { AuthenticateService } from './services/authenticateService/authenticate.service';
-
-// pipes
-import { CapitalizePipe } from './pipes/capitalize/capitalize.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
-    TableStripedComponent,
-    CapitalizePipe
+    TableStripedComponent
   ],
   imports: [
     BrowserModule,
@@ -30,8 +25,7 @@ import { CapitalizePipe } from './pipes/capitalize/capitalize.pipe';
     Routing
   ],
   providers: [
-    UserService,
-    AuthenticateService
+    UserService
   ],
   bootstrap: [AppComponent]
 })

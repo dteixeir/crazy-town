@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 // services imports
 import { UserService } from '../../services/userService/user.service';
-import { AuthenticateService } from '../../services/authenticateService/authenticate.service';
 
 // class imports
 // import { UserLite } from '../../models/userLite/user-lite';
@@ -17,8 +16,7 @@ export class MyComponentComponent implements OnInit {
   private headers= [];
 
   constructor(
-    private userService: UserService,
-    private authenticateService: AuthenticateService
+    private userService: UserService
   ) { }
 
   getUsers() {
@@ -28,17 +26,8 @@ export class MyComponentComponent implements OnInit {
       .then(() => console.log('got users!'));
   }
 
-  authenticate() {
-    console.log('auth ran!');
-    this.authenticateService
-      .authenticate()
-      .then(token => console.log(token));
-  }
-
   ngOnInit(): void {
     this.headers = ['', 'users', 'OrganizationId', 'Active'];
     this.getUsers();
-    this.authenticate();
   }
-
 }
