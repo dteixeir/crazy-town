@@ -1,0 +1,39 @@
+---
+- name: load webpage
+  uid: 99841074-b939-43b1-9370-c3fddc50c615
+  parameters:
+  - name: url
+  - name: page_title
+  body_hash: 51b2a0160e9ea18e3b1d728ce70c6ab1
+- name: open a browser
+  uid: 5bffc754-f39a-46d1-a00f-03c47b9314f0
+  parameters:
+  - name: browser
+  body_hash: 2cccd1a2a002f17ac9ba46f7bf236e47
+- name: navigate to page
+  uid: 0b2b8a45-f23d-44cb-866c-c93949dd1231
+  parameters:
+  - name: page
+  - name: title
+  body_hash: c8d9730e403ba683ae06dfca1d4251a2
+- name: table exists on page
+  uid: da8bdf6f-dd35-4156-93fe-c0221a9c4c71
+  parameters:
+  - name: css_class
+  body_hash: fe2258d410cff8b5a878e47c078fca70
+- name: table headers are correct
+  uid: 9fb22dd6-6a78-4504-a71f-fa28709f5420
+  parameters:
+  - name: user_column_header
+  - name: org_column_header
+  - name: active_column_header
+  body_hash: 749bf53e71507d80816b2f43016a831a
+- name: table contents are correct
+  uid: f0ec9fd4-ca06-4484-8e70-94ff84cd73b5
+  parameters:
+  - name: user_name
+  - name: first_name_last_name
+  - name: org_id
+  - name: active_status
+  - name: row
+  body_hash: 4167c62ecb3ad9e36ef5f5c61511c3b4
