@@ -1,7 +1,7 @@
 {
   "project": {
-    "version": "1.0.0-beta.16",
-    "name": "poc"
+    "version": "1.0.0-beta.17",
+    "name": "crazy-town"
   },
   "apps": [
     {
@@ -14,16 +14,10 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-      "scripts": [
-        "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/tether/dist/js/tether.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
-      ],
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "styles.scss",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "styles.css"
       ],
+      "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -31,9 +25,7 @@
       }
     }
   ],
-  "addons": [
-
-  ],
+  "addons": [],
   "packages": [],
   "e2e": {
     "protractor": {
@@ -46,7 +38,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
+    "styleExt": "css",
     "prefixInterfaces": false
   }
 }

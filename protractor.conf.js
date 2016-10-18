@@ -3,19 +3,16 @@
 
 /*global jasmine */
 var SpecReporter = require('jasmine-spec-reporter');
-var JasmineReporters = require('jasmine-reporters');
 
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './e2e/project_test.js'
+    './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
     'browserName': 'chrome'
   },
-  // directConnect: true,
-  seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
-  chromeDriver: '/e2e/chromedriver.exe',
+  directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
@@ -31,6 +28,5 @@ exports.config = {
   },
   onPrepare: function() {
     jasmine.getEnv().addReporter(new SpecReporter());
-    jasmine.getEnv().addReporter(new JasmineReporters.JUnitXmlReporter(null, true, true));
   }
 };

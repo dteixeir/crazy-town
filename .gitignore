@@ -10,6 +10,7 @@
 
 # IDEs and editors
 /.idea
+/.vscode
 .project
 .classpath
 *.launch
@@ -25,12 +26,9 @@ testem.log
 /typings
 
 # e2e
+/e2e/*.js
 /e2e/*.map
 
 #System Files
-**/*.DS_Store
-**/*.vscode
+.DS_Store
 Thumbs.db
-
-#Test Files
-**/junitresults.xml
