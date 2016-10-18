@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MyComponentComponent } from './views/my-component/my-component.component';
 import { TableStripedComponent } from './components/table-striped/table-striped.component';
 
 // services
@@ -13,7 +12,6 @@ import { UserService } from './services/userService/user.service';
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponentComponent,
     TableStripedComponent
   ],
   imports: [
