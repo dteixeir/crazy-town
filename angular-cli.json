@@ -1,7 +1,7 @@
 {
   "project": {
-    "version": "1.0.0-beta.16",
-    "name": "poc"
+    "version": "1.0.0-beta.17",
+    "name": "crazy-town"
   },
   "apps": [
     {
@@ -21,7 +21,6 @@
       ],
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "styles.scss",
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "environments": {
@@ -31,9 +30,7 @@
       }
     }
   ],
-  "addons": [
-
-  ],
+  "addons": [],
   "packages": [],
   "e2e": {
     "protractor": {
@@ -46,7 +43,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
+    "styleExt": "css",
     "prefixInterfaces": false
   }
 }
