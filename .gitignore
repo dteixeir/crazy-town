@@ -2,6 +2,15 @@
 
 # compiled output
 /tmp
+/src
+/e2e
+
+# file formats
+**/.editorconfig
+**/README.md
+**/karma.conf.js
+**/tslint.json
+
 
 # dependencies
 /node_modules
